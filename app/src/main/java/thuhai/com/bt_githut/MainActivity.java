@@ -16,5 +16,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
     }
+    
+        @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onChildTitleChanged(Activity childActivity, CharSequence title) {
+        super.onChildTitleChanged(childActivity, title);
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+    }
 
 }
